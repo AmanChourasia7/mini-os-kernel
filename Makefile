@@ -1,12 +1,10 @@
-# Simple build system for Mini OS Kernel
+# Simple build system for Mini OS Kernel (Colab compatible)
 
 ASM=nasm
-CC=i686-elf-gcc
-LD=i686-elf-ld
+CC=gcc
+LD=ld
 CFLAGS=-ffreestanding -O2 -Wall -Wextra -m32
 LDFLAGS=-Ttext 0x1000 -m elf_i386
-
-BUILD=build
 
 all: kernel.bin
 
@@ -17,7 +15,7 @@ kernel.bin: boot/boot.asm kernel/kernel.c drivers/vga.c drivers/keyboard.c lib/u
 	cat boot.bin kernel.elf > kernel.bin
 
 run: kernel.bin
-	qemu-system-x86_64 -drive format=raw,file=kernel.bin
+	qemu-system-x86_64 -drive format=raw,file=kernel.bin -nographic
 
 clean:
 	rm -f *.bin *.o *.elf
