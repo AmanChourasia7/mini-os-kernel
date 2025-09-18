@@ -2,7 +2,7 @@
 
 **Author:** Aman Chourasia
 
-## 🎯 Design Philosophy
+## Design Philosophy
 
 This project isn’t just about writing code, it’s about understanding the foundations of how an operating system works from the ground up. My goal with this mini kernel is to experiment, learn, and push the limits of low-level programming. Every line of C and Assembly here is crafted with clarity, minimalism, and control in mind.
 
@@ -11,13 +11,12 @@ Key principles guiding this project:
 * **Simplicity:** Keep each component small and understandable.
 * **Transparency:** Expose what’s happening at every stage of the boot and runtime process.
 * **Modularity:** Make it easy to swap, upgrade, or extend parts of the kernel without breaking everything.
-* **Learning-first:** Prioritize understanding over feature completeness — a kernel that teaches is better than a kernel that just runs.
+* **Learning-first:** Prioritize understanding over feature completeness, a kernel that teaches is better than a kernel that just runs.
 
-This project is as much a personal exploration as it is a technical challenge — a playground to really *feel* what it takes to run a machine from scratch.
+This project is as much a personal exploration as it is a technical challenge, a playground to really *feel* what it takes to run a machine from scratch.
 
----
 
-## ✨ Features
+## Features
 
 * GRUB-based bootloader (multiboot compliant)
 * Kernel core in C with low-level Assembly
@@ -31,7 +30,7 @@ This project is as much a personal exploration as it is a technical challenge �
 
 ---
 
-## 📂 Project Layout
+## Project Layout
 
 ```
 mini-os-kernel/
@@ -45,7 +44,7 @@ mini-os-kernel/
 
 ---
 
-## 🚀 Build & Run
+## Build & Run
 
 ### Requirements
 
@@ -63,9 +62,7 @@ make        # build kernel
 make run    # run in QEMU
 ```
 
----
-
-## 📌 Roadmap
+## Roadmap
 
 * File system support (FAT12/FAT32)
 * System calls
@@ -73,9 +70,7 @@ make run    # run in QEMU
 * User-space program execution
 * Basic networking (future stage)
 
----
-
-## 📜 License
+## License
 
 **All Rights Reserved**
 Copyright © Aman Chourasia, 2025
